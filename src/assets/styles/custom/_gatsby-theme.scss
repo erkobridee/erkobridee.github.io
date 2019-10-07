@@ -3,24 +3,24 @@
 	https://material.io/tools/color/#!/?view.left=0&view.right=1&primary.color=663399&secondary.color=F9A825
 */
 $md-colors: (
-	color-primary: #303327,
-	color-primary-light: #595c4f,
-	color-primary-dark: #080c00,
+	color-primary: #6d2f9c,
+	color-primary-light: #9e5dce,
+	color-primary-dark: #3d006d,
 	color-on-primary: #ffffff,
-	color-on-primary-light: #ffffff,
+	color-on-primary-light: #000000,
 	color-on-primary-dark: #ffffff,
-	color-secundary: #ffb100,
-	color-secundary-light: #ffe34c,
-	color-secundary-dark: #c68200,
+	color-secundary: #ffae1f,
+	color-secundary-light: #ffe058,
+	color-secundary-dark: #c77f00,
 	color-on-secundary: #000000,
 	color-on-secundary-light: #000000,
 	color-on-secundary-dark: #000000,
-	color-error: #cf292e,
+	color-error: #b00020,
 	color-on-error: #ffffff,
-	color-background: #f8f8f8,
-	color-on-background: #060606,
+	color-background: #ffffff,
+	color-on-background: #000000,
 	color-surface: #ffffff,
-	color-on-surface: #060606,
+	color-on-surface: #000000,
 );
 
 :root {

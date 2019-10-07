@@ -88,7 +88,8 @@
 		"type-check": "tsc",
 		"gatsby-clean": "gatsby clean",
 		"gatsby-develop": "gatsby develop -H 0.0.0.0",
-		"gatsby-build": "gatsby build --prefix-paths",
+		"prefix:gatsby-build": "gatsby build --prefix-paths",
+		"gatsby-build": "gatsby build",
 		"gatsby-serve": "gatsby serve -H 0.0.0.0",
 		"clean:build": "node scripts/fs/rm .build/",
 		"clean": "npm-run-all -p clean:build fonticons:clean gatsby-clean",
@@ -96,10 +97,12 @@
 		"base": "npm-run-all -s check fonticons translations",
 		"develop": "npm-run-all -s base gatsby-develop",
 		"start": "npm run develop",
-		"build": "npm-run-all -s clean base gatsby-build ",
+		"build": "npm-run-all -s clean base gatsby-build",
+		"prefix:build": "npm-run-all -s clean base prefix:gatsby-build",
 		"serve": "npm-run-all -s build gatsby-serve",
 		"gh-deploy": "gh-pages -d public -b master",
-		"deploy": "PREFIX_PATH=true npm-run-all -s build gh-deploy"
+		"deploy": "npm-run-all -s build gh-deploy",
+		"prefix:deploy": "PREFIX_PATH=true npm-run-all -s prefix:build gh-deploy"
 	},
 	"browserslist": [
 		">1%",

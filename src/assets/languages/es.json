@@ -1,12 +1,7 @@
 {
   "404.message": "Acabas de llegar a una ruta que no existe... que tristeza.",
   "404.title": "404: No encontrado",
-  "home.gobuild": "Ahora va a construir algo grande.",
-  "home.greeting": "Hola gente",
-  "home.link-page2": "Ir a la página 2",
-  "home.link-photos": "Ir a las fotos",
   "home.pagetitle": "Casa",
-  "home.welcome": "Bienvenido a tu nuevo sitio de Gatsby.",
   "language.selector.label": "Seleccione otro idioma disponible",
   "language.selector.option.english": "Inglés",
   "language.selector.option.portuguese": "Portugués",
@@ -20,5 +15,6 @@
   "photo.return-to-photos": "Volver a las fotos",
   "photos.loading": "Cargando...",
   "photos.loadmore": "Carga más",
-  "photos.pagetitle": "Fotos"
+  "photos.pagetitle": "Fotos",
+  "who.i.am": "Soy un informático loco, pero con licenciatura \\o/"
 }

@@ -20,13 +20,13 @@ const gatsbyConfig = {
 		{
 			resolve: `gatsby-plugin-manifest`,
 			options: {
-				name: `gatsby-typescript-app-starter`,
-				short_name: `ts-starter`,
+				name: `erkobridee_site`,
+				short_name: `eb-site`,
 				start_url: `.`,
 				background_color: `#ffffff`,
-				theme_color: `#6d2f9c`,
+				theme_color: `#303327`,
 				display: `minimal-ui`,
-				icon: `src/assets/images/gatsby-icon.png`, // This path is relative to the root of the site.
+				icon: `src/assets/images/erko_avatar_512.png`, // This path is relative to the root of the site.
 			},
 		},
 		{

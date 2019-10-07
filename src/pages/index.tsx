@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
 
 import Layout from 'components/Layout';
-import GatsbyAstronoutImage from 'components/GatsbyAstronoutImage';
+// import GatsbyAstronoutImage from 'components/GatsbyAstronoutImage';
 import SEO from 'components/SEO';
+import FontIcon from 'components/ui/FontIcon';
 
 /*
 <section id="downloads">
@@ -21,10 +22,67 @@ const IndexPage = () => {
 			<FormattedMessage id="home.pagetitle" defaultMessage="Home">
 				{text => <SEO title={text as string} />}
 			</FormattedMessage>
-			<p>I'm a mad computer scientist, but with bachelor's degree \o/</p>
+
+			<p>
+				<FormattedMessage
+					id="who.i.am"
+					defaultMessage="I'm a mad computer scientist, but with bachelor's degree \o/"
+				/>
+			</p>
 			<br />
 
-			<h1>
+			<div>
+				<ul>
+					<li>
+						<FontIcon name="github" />{' '}
+						<a href="https://github.com/erkobridee" target="_blank">
+							GitHub
+						</a>{' '}
+						|{' '}
+						<a href="https://gist.github.com/erkobridee" target="_blank">
+							Gist
+						</a>
+					</li>
+					<li>
+						<FontIcon name="web-programming" />{' '}
+						<a href="https://codesandbox.io/u/erkobridee/" target="_blank">
+							Code Sandbox
+						</a>
+					</li>
+					<li>
+						<FontIcon name="web-programming" />{' '}
+						<a href="https://codepen.io/erkobridee" target="_blank">
+							Codepen
+						</a>
+					</li>
+					<li>
+						<FontIcon name="linkedin" />{' '}
+						<a href="https://linkedin.com/in/erkobridee/" target="_blank">
+							LinkedIn
+						</a>
+					</li>
+					<li>
+						<FontIcon name="twitter" />{' '}
+						<a href="https://twitter.com/ErkoBridee" target="_blank">
+							Twitter
+						</a>
+					</li>
+					<li>
+						<FontIcon name="instagram" />{' '}
+						<a href="https://www.instagram.com/erkobridee/" target="_blank">
+							Instagram
+						</a>
+					</li>
+					<li>
+						<FontIcon name="medium" />{' '}
+						<a href="https://medium.com/@erkobridee" target="_blank">
+							Medium
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			{/* <h1>
 				<FormattedMessage id="home.greeting" defaultMessage="Hi people" />
 			</h1>
 			<p>
@@ -32,11 +90,11 @@ const IndexPage = () => {
 			</p>
 			<p>
 				<FormattedMessage id="home.gobuild" defaultMessage="Now go build something great." />
-			</p>
-			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+			</p> */}
+			{/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
 				<GatsbyAstronoutImage />
-			</div>
-			<div>
+			</div> */}
+			{/* <div>
 				<Link to="/page-2">
 					<FormattedMessage id="home.link-page2" defaultMessage="Go to page 2" />
 				</Link>{' '}
@@ -44,7 +102,7 @@ const IndexPage = () => {
 				<Link to="/photos">
 					<FormattedMessage id="home.link-photos" defaultMessage="Go to photos" />
 				</Link>
-			</div>
+			</div> */}
 		</Layout>
 	);
 };
