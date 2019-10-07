@@ -1,0 +1,30 @@
+// edit font rendering -> tip: use for light text on dark backgrounds
+@mixin fontSmooth {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+//----------------------------------------------------------------------------//
+
+// https://css-tricks.com/snippets/css/fluid-typography/
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+	$u1: unit($min-vw);
+	$u2: unit($max-vw);
+	$u3: unit($min-font-size);
+	$u4: unit($max-font-size);
+
+	@if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+		& {
+			--text-base-size: #{$min-font-size};
+			@media screen and (min-width: $min-vw) {
+				--text-base-size: calc(
+					#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+						((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+				);
+			}
+			@media screen and (min-width: $max-vw) {
+				--text-base-size: #{$max-font-size};
+			}
+		}
+	}
+}

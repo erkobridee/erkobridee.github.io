@@ -1,0 +1,15 @@
+@import 'assets/styles/base/_mixins.scss';
+
+.imagecard {
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+
+	&--square {
+		@include aspect-ratio(1, 1);
+	}
+
+	&--rectangle {
+		@include aspect-ratio(16, 9);
+	}
+}

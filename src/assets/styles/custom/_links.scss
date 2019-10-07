@@ -1,0 +1,18 @@
+a,
+.link {
+	transition: var(--link-transition, var(--default-transition));
+	color: var(--link, inherit);
+	text-decoration: var(--link-decoration, none);
+
+	&:hover {
+		color: var(--link-hover, inherit);
+	}
+
+	&:active {
+		color: var(--link-active, inherit);
+	}
+
+	&:visited {
+		color: var(--link-visited, inherit);
+	}
+}
