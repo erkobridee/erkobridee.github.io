@@ -1,14 +1,6 @@
 @import 'assets/styles/base/_mixins.scss';
 
 .layoutheader {
-	a,
-	.link {
-		--link: var(--link-inverted-active);
-		--link-hover: var(--link-inverted-hover);
-		--link-active: var(--link-inverted-active);
-		--link-visited: var(--link-inverted-active);
-	}
-
 	&,
 	&__content {
 		display: flex;
@@ -40,6 +32,20 @@
 
 		@include breakpoint-max(xs) {
 			font-size: var(--text-lg);
+		}
+	}
+
+	&__link {
+		--link: var(--link-inverted-active);
+		--link-hover: var(--link-inverted-hover);
+		--link-active: var(--link-inverted-active);
+		--link-visited: var(--link-inverted-active);
+
+		&--sitename {
+			--link: var(--link-sitename-active);
+			--link-hover: var(--link-sitename-hover);
+			--link-active: var(--link-sitename-active);
+			--link-visited: var(--link-sitename-active);
 		}
 	}
 }

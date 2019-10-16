@@ -17,4 +17,9 @@
 	--link-inverted-hover: rgba(var(--color-on-primary), var(--text-opacity-active));
 	--link-inverted-active: rgba(var(--color-on-primary), var(--text-opacity-active));
 	--link-inverted-visited: rgba(var(--color-on-primary), var(--text-opacity-visited));
+
+	--link-sitename: rgba(var(--color-secondary), var(--text-opacity-inactive));
+	--link-sitename-hover: rgba(var(--color-secondary), var(--text-opacity-active));
+	--link-sitename-active: rgba(var(--color-secondary), var(--text-opacity-active));
+	--link-sitename-visited: rgba(var(--color-secondary), var(--text-opacity-visited));
 }

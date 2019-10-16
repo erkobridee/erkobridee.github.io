@@ -17,10 +17,10 @@ a,
 	}
 
 	&:active {
-		color: var(--link-active, inherit);
+		color: var(--link-active);
 	}
 
 	&:visited {
-		color: var(--link-visited, inherit);
+		color: var(--link-visited);
 	}
 }
