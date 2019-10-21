@@ -50,7 +50,7 @@ const IndexPage = () => {
 						</a>
 					</li>
 					<li>
-						<FontIcon name="web-programming" />{' '}
+						<FontIcon name="codepen" />{' '}
 						<a href="https://codepen.io/erkobridee" target="_blank">
 							Codepen
 						</a>
@@ -59,6 +59,12 @@ const IndexPage = () => {
 						<FontIcon name="linkedin" />{' '}
 						<a href="https://linkedin.com/in/erkobridee/" target="_blank">
 							LinkedIn
+						</a>
+					</li>
+					<li>
+						<FontIcon name="udemy" />{' '}
+						<a href="https://www.udemy.com/user/erko-bridee-de-almeida-cabrera/" target="_blank">
+							Udemy
 						</a>
 					</li>
 					<li>
