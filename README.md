@@ -11,3 +11,5 @@
 -   [Completion certificate for Become at ease with Java 8](https://www.udemy.com/certificate/UC-71CHXCYD/) - 2018/05/09
 
 -   [Completion certificate for UX Design & User Experience Design Course - Theory Only](https://www.udemy.com/certificate/UC-TN1GFZWH/) - 2019/11/25
+
+-   [Completion certificate for Introduction to TypeScript](https://www.udemy.com/certificate/UC-FIJWOA8L/) - 2019/11/26
