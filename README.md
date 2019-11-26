@@ -13,3 +13,5 @@
 -   [Completion certificate for UX Design & User Experience Design Course - Theory Only](https://www.udemy.com/certificate/UC-TN1GFZWH/) - 2019/11/25
 
 -   [Completion certificate for Introduction to TypeScript](https://www.udemy.com/certificate/UC-FIJWOA8L/) - 2019/11/26
+
+-   [Completion certificate for The Complete Copywriting Course : Write To Sell in 2019](https://www.udemy.com/certificate/UC-SG4I2XVP/) - 2019/11/26
