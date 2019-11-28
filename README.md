@@ -15,3 +15,5 @@
 -   [Completion certificate for Introduction to TypeScript](https://www.udemy.com/certificate/UC-FIJWOA8L/) - 2019/11/26
 
 -   [Completion certificate for The Complete Copywriting Course : Write To Sell in 2019](https://www.udemy.com/certificate/UC-SG4I2XVP/) - 2019/11/26
+
+-   [Completion certificate for Build a Lucrative Copywriting Portfolio from Scratch](https://www.udemy.com/certificate/UC-I5NEQJ12/) - 2019/11/28
