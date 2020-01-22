@@ -19,3 +19,5 @@
 -   [Completion certificate for Build a Lucrative Copywriting Portfolio from Scratch](https://www.udemy.com/certificate/UC-I5NEQJ12/) - 2019/11/28
 
 -   [Completion certificate for Docker for beginners](https://www.udemy.com/certificate/UC-UJG4896H/) - 2020/01/20
+
+-   [Completion certificate for Build Modern Web Layouts With CSS Flexbox](https://www.udemy.com/certificate/UC-FGWHQQDD/) - 2020/01/22
