@@ -21,3 +21,5 @@
 -   [Completion certificate for Docker for beginners](https://www.udemy.com/certificate/UC-UJG4896H/) - 2020/01/20
 
 -   [Completion certificate for Build Modern Web Layouts With CSS Flexbox](https://www.udemy.com/certificate/UC-FGWHQQDD/) - 2020/01/22
+
+- [Completion certificate for Azure Introduction to Cloud Services](https://www.udemy.com/certificate/UC-128b416c-25c0-4cff-a0d7-2a948f540099/) - 2020/02/24
