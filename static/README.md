@@ -23,3 +23,5 @@
 -   [Completion certificate for Build Modern Web Layouts With CSS Flexbox](https://www.udemy.com/certificate/UC-FGWHQQDD/) - 2020/01/22
 
 - [Completion certificate for Azure Introduction to Cloud Services](https://www.udemy.com/certificate/UC-128b416c-25c0-4cff-a0d7-2a948f540099/) - 2020/02/24
+
+- [Completion certificate for Learn Azure DevOps CI/CD pipelines](https://www.udemy.com/certificate/UC-006d961f-7f15-4f55-9f46-6cac2f1c4bdc/)
