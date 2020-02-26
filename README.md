@@ -17,3 +17,11 @@
 -   [Completion certificate for The Complete Copywriting Course : Write To Sell in 2019](https://www.udemy.com/certificate/UC-SG4I2XVP/) - 2019/11/26
 
 -   [Completion certificate for Build a Lucrative Copywriting Portfolio from Scratch](https://www.udemy.com/certificate/UC-I5NEQJ12/) - 2019/11/28
+
+-   [Completion certificate for Docker for beginners](https://www.udemy.com/certificate/UC-UJG4896H/) - 2020/01/20
+
+-   [Completion certificate for Build Modern Web Layouts With CSS Flexbox](https://www.udemy.com/certificate/UC-FGWHQQDD/) - 2020/01/22
+
+- [Completion certificate for Azure Introduction to Cloud Services](https://www.udemy.com/certificate/UC-128b416c-25c0-4cff-a0d7-2a948f540099/) - 2020/02/24
+
+- [Completion certificate for Learn Azure DevOps CI/CD pipelines](https://www.udemy.com/certificate/UC-006d961f-7f15-4f55-9f46-6cac2f1c4bdc/)
