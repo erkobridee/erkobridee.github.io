@@ -2,8 +2,7 @@ const args = require('yargs').options({
 	fontname: { alias: 'f', describe: 'define the fontname', demandOption: true },
 	cssfontsurl: {
 		alias: 'c',
-		describe:
-			"define the css fonts urls defined on the output styles file (default value: 'assets/icons/generated/')",
+		describe: "define the css fonts urls defined on the output styles file (default value: 'assets/icons/generated/')",
 		demandOption: false,
 	},
 }).argv;
