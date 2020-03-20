@@ -104,6 +104,7 @@
 		"serve": "npm-run-all -s build gatsby-serve",
 		"gh-deploy": "gh-pages -d public -b master",
 		"deploy": "PREFIX_PATH=false npm-run-all -s prefix:build gh-deploy",
+		"ci": "PREFIX_PATH=false npm-run-all -s prefix:build",
 		"upgrade-interactive": "npm-check --update"
 	},
 	"browserslist": [
