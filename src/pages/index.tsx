@@ -24,10 +24,7 @@ const IndexPage = () => {
 			</FormattedMessage>
 
 			<p>
-				<FormattedMessage
-					id="who.i.am"
-					defaultMessage="I'm a mad computer scientist, but with bachelor's degree \o/"
-				/>
+				<FormattedMessage id="who.i.am" defaultMessage="I'm a mad computer scientist, but with bachelor's degree \o/" />
 			</p>
 			<br />
 

@@ -24,17 +24,15 @@ export async function loadLocale(locale?: string): Promise<ILocale> {
 	let localeData;
 	switch (locale) {
 		case 'pt':
-			messages = (await import(
-				/* webpackMode: "lazy", webpackChunkName: "language_pt" */ `assets/languages/pt.json`
-			)).default;
+			messages = (await import(/* webpackMode: "lazy", webpackChunkName: "language_pt" */ `assets/languages/pt.json`))
+				.default;
 			localeData = (await import(
 				/* webpackMode: "lazy", webpackChunkName: "language_pt" */ `react-intl/locale-data/pt`
 			)).default;
 			return { locale, messages, localeData };
 		case 'es':
-			messages = (await import(
-				/* webpackMode: "lazy", webpackChunkName: "language_es" */ `assets/languages/es.json`
-			)).default;
+			messages = (await import(/* webpackMode: "lazy", webpackChunkName: "language_es" */ `assets/languages/es.json`))
+				.default;
 			localeData = (await import(
 				/* webpackMode: "lazy", webpackChunkName: "language_es" */ `react-intl/locale-data/es`
 			)).default;
@@ -42,9 +40,8 @@ export async function loadLocale(locale?: string): Promise<ILocale> {
 		case 'en':
 		default:
 			locale = 'en';
-			messages = (await import(
-				/* webpackMode: "lazy", webpackChunkName: "language_en" */ `assets/languages/en.json`
-			)).default;
+			messages = (await import(/* webpackMode: "lazy", webpackChunkName: "language_en" */ `assets/languages/en.json`))
+				.default;
 			localeData = (await import(
 				/* webpackMode: "lazy", webpackChunkName: "language_en" */ `react-intl/locale-data/en`
 			)).default;
