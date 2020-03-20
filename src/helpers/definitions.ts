@@ -16,41 +16,41 @@ export const FALSY = /^(?:f(?:alse)?|no?|off|0)$/i;
 // @begin: enums block
 
 export enum JSTypeof {
-	UNDEFINED = 'undefined',
-	FUNCTION = 'function',
-	OBJECT = 'object',
-	STRING = 'string',
-	NUMBER = 'number',
+  UNDEFINED = 'undefined',
+  FUNCTION = 'function',
+  OBJECT = 'object',
+  STRING = 'string',
+  NUMBER = 'number',
 }
 
 export enum RequestProtocol {
-	HTTP = 'http',
-	HTTPS = 'https',
+  HTTP = 'http',
+  HTTPS = 'https',
 }
 
 /**
  * Defines HTTP Request Methods
  */
 export enum RequestMethod {
-	GET = 'GET',
-	POST = 'POST',
-	PUT = 'PUT',
-	PATCH = 'PATCH',
-	DELETE = 'DELETE',
+  GET = 'GET',
+  POST = 'POST',
+  PUT = 'PUT',
+  PATCH = 'PATCH',
+  DELETE = 'DELETE',
 }
 
 /**
  * Defines request content types
  */
 export enum RequestContentTypes {
-	IMAGE = 'image/jpg, image/png',
-	JSON = 'application/json',
-	FORM = '',
+  IMAGE = 'image/jpg, image/png',
+  JSON = 'application/json',
+  FORM = '',
 }
 
 export enum APIResponseStatus {
-	SUCCESS = 'api:response::success',
-	ERROR = 'api:response::error',
+  SUCCESS = 'api:response::success',
+  ERROR = 'api:response::error',
 }
 
 // @end: enums block
@@ -87,68 +87,68 @@ export type TAPIResponse = IStringAPIResponse | IAPIResponse;
 // @begin: interfaces block
 
 export interface IDictionary<T = any> {
-	[key: string]: T;
+  [key: string]: T;
 }
 
 export interface IProjectWindow extends Window {
-	CSS?: any;
+  CSS?: any;
 }
 
 export interface ILocale {
-	locale: string;
-	localeData: LocaleData;
-	messages: IDictionary<string>;
+  locale: string;
+  localeData: LocaleData;
+  messages: IDictionary<string>;
 }
 
 export interface IBaseModel<T = any> {
-	readonly __innerprops__: T;
+  readonly __innerprops__: T;
 }
 
 export interface IBaseResponse<T = any> {
-	status: APIResponseStatus;
-	statusCode: number;
-	data: T;
-	/** defined when the API has "pagination" support */
-	totalCount?: number;
+  status: APIResponseStatus;
+  statusCode: number;
+  data: T;
+  /** defined when the API has "pagination" support */
+  totalCount?: number;
 }
 
 /**
  * Base response object returned from the buildRequest
  */
 export interface IAPIResponse<T = any> {
-	readonly statusCode: number;
-	readonly headers: Headers;
-	readonly body: T;
+  readonly statusCode: number;
+  readonly headers: Headers;
+  readonly body: T;
 
-	// defined to be able to use the Pick<IAPIResponse, '__bodyType__'>
-	// and read the generic type assigned to it
-	__bodyType__?: T;
+  // defined to be able to use the Pick<IAPIResponse, '__bodyType__'>
+  // and read the generic type assigned to it
+  __bodyType__?: T;
 }
 
 export interface IStringAPIResponse<T = string> extends IAPIResponse<T> {}
 
 export interface IPaginationRequestParams {
-	offset?: number;
-	page?: number;
-	countPerPage: number;
-	previousTotalCount?: number;
+  offset?: number;
+  page?: number;
+  countPerPage: number;
+  previousTotalCount?: number;
 }
 
 /**
  * Defines api request options that is used to build an api call.
  */
 export interface IRequestOptions {
-	/** like passing the access token with the value: `Bearer ${accessToken}` */
-	authorization?: string;
-	contentType?: RequestContentTypes;
-	protocol?: RequestProtocol | string;
-	method?: RequestMethod;
-	host?: string;
-	api?: string;
-	urlPath: string;
-	variables?: IDictionary;
-	parameters?: IDictionary;
-	noCache?: boolean;
+  /** like passing the access token with the value: `Bearer ${accessToken}` */
+  authorization?: string;
+  contentType?: RequestContentTypes;
+  protocol?: RequestProtocol | string;
+  method?: RequestMethod;
+  host?: string;
+  api?: string;
+  urlPath: string;
+  variables?: IDictionary;
+  parameters?: IDictionary;
+  noCache?: boolean;
 }
 
 // @end: interfaces block

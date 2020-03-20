@@ -16,10 +16,10 @@ function prop<T extends TJSValue>(object: T, key: string) {
  * @return {TFilter<T>}
  */
 function filterIntersection<T extends TJSValue>(values: T[], byObjectProperty?: string): TArrayFilter<T> {
-	if (byObjectProperty) {
-		return (x: T) => values.some(y => x[byObjectProperty] === y[byObjectProperty]);
-	}
-	return (x: T) => values.includes(x);
+  if (byObjectProperty) {
+    return (x: T) => values.some(y => x[byObjectProperty] === y[byObjectProperty]);
+  }
+  return (x: T) => values.includes(x);
 }
 
 /**
@@ -31,10 +31,10 @@ function filterIntersection<T extends TJSValue>(values: T[], byObjectProperty?: 
  * @return {TArrayFilter<T>}
  */
 function filterDifference<T extends TJSValue>(values: T[], byObjectProperty?: string): TArrayFilter<T> {
-	if (byObjectProperty) {
-		return (x: T) => !values.some(y => x[byObjectProperty] === y[byObjectProperty]);
-	}
-	return (x: T) => !values.includes(x);
+  if (byObjectProperty) {
+    return (x: T) => !values.some(y => x[byObjectProperty] === y[byObjectProperty]);
+  }
+  return (x: T) => !values.includes(x);
 }
 
 // -------------------------------------------------------------------------- //
@@ -48,10 +48,10 @@ function filterDifference<T extends TJSValue>(values: T[], byObjectProperty?: st
  * @return {TArrayFilter<T>}
  */
 function filterFindValue<T extends TJSValue>(value: T, byObjectProperty?: string): TArrayFilter<T> {
-	if (byObjectProperty) {
-		return (x: T) => x[byObjectProperty] === (isObject(value) ? value[byObjectProperty] : value);
-	}
-	return (x: T) => x === value;
+  if (byObjectProperty) {
+    return (x: T) => x[byObjectProperty] === (isObject(value) ? value[byObjectProperty] : value);
+  }
+  return (x: T) => x === value;
 }
 
 // -------------------------------------------------------------------------- //
@@ -65,12 +65,12 @@ function filterFindValue<T extends TJSValue>(value: T, byObjectProperty?: string
  * @return {T[]} values without repetition
  */
 function unique<T>(values: T[], byObjectProperty?: string): T[] {
-	return values.reduce(
-		(unique, item) => {
-			return filterIntersection(unique, byObjectProperty)(item) ? unique : [...unique, item];
-		},
-		[] as T[]
-	);
+  return values.reduce(
+    (unique, item) => {
+      return filterIntersection(unique, byObjectProperty)(item) ? unique : [...unique, item];
+    },
+    [] as T[]
+  );
 }
 
 /**
@@ -83,7 +83,7 @@ function unique<T>(values: T[], byObjectProperty?: string): T[] {
  * @return {T[]} values present on both arrays
  */
 function intersection<T>(arr1: T[], arr2: T[], byObjectProperty?: string): T[] {
-	return arr1.filter(filterIntersection(arr2, byObjectProperty));
+  return arr1.filter(filterIntersection(arr2, byObjectProperty));
 }
 
 /**
@@ -96,9 +96,9 @@ function intersection<T>(arr1: T[], arr2: T[], byObjectProperty?: string): T[] {
  * @return {boolean} flag
  */
 function contains<T>(sourceArray: T[], matchArray: T[], byObjectProperty?: string): boolean {
-	const arr2Lenght = matchArray.length;
-	const arr3 = intersection<T>(sourceArray, matchArray, byObjectProperty);
-	return arr2Lenght === arr3.length;
+  const arr2Lenght = matchArray.length;
+  const arr3 = intersection<T>(sourceArray, matchArray, byObjectProperty);
+  return arr2Lenght === arr3.length;
 }
 
 /**
@@ -111,7 +111,7 @@ function contains<T>(sourceArray: T[], matchArray: T[], byObjectProperty?: strin
  * @return {T[]}
  */
 function difference<T>(sourceArray: T[], matchArray: T[], byObjectProperty?: string): T[] {
-	return sourceArray.filter(filterDifference(matchArray, byObjectProperty));
+  return sourceArray.filter(filterDifference(matchArray, byObjectProperty));
 }
 
 /**
@@ -124,9 +124,9 @@ function difference<T>(sourceArray: T[], matchArray: T[], byObjectProperty?: str
  * @return {T[]}
  */
 function symmetricDifference<T>(arr1: T[], arr2: T[], byObjectProperty?: string): T[] {
-	return arr1
-		.filter(filterDifference(arr2, byObjectProperty))
-		.concat(arr2.filter(filterDifference(arr1, byObjectProperty)));
+  return arr1
+    .filter(filterDifference(arr2, byObjectProperty))
+    .concat(arr2.filter(filterDifference(arr1, byObjectProperty)));
 }
 
 /**
@@ -139,7 +139,7 @@ function symmetricDifference<T>(arr1: T[], arr2: T[], byObjectProperty?: string)
  * @return {T | undefined} value founded or undefined
  */
 function find<T extends TJSValue>(values: T[], value: T, byObjectProperty?: string): T | undefined {
-	return values.find(filterFindValue(value, byObjectProperty));
+  return values.find(filterFindValue(value, byObjectProperty));
 }
 
 /**
@@ -151,42 +151,42 @@ function find<T extends TJSValue>(values: T[], value: T, byObjectProperty?: stri
  * @param {string} byObjectProperty - optional parameter in case of array of objects
  */
 function merge<T>(sourceArray: T[], withArray: T[], byObjectProperty?: string): T[] {
-	if (!byObjectProperty) {
-		return symmetricDifference(sourceArray, withArray);
-	}
+  if (!byObjectProperty) {
+    return symmetricDifference(sourceArray, withArray);
+  }
 
-	return [
-		...sourceArray.map(item => {
-			const element = find(withArray, item, byObjectProperty);
-			if (element) {
-				return element;
-			}
-			return item;
-		}),
-		...difference(withArray, sourceArray, byObjectProperty),
-	];
+  return [
+    ...sourceArray.map(item => {
+      const element = find(withArray, item, byObjectProperty);
+      if (element) {
+        return element;
+      }
+      return item;
+    }),
+    ...difference(withArray, sourceArray, byObjectProperty),
+  ];
 }
 
 // -------------------------------------------------------------------------- //
 
 export {
-	unique as arrayUnique,
-	intersection as arrayIntersection,
-	difference as arrayDifference,
-	contains as arrayContains,
-	symmetricDifference as arraySymmetricDifference,
-	find as arrayFind,
-	merge as arrayMerge,
+  unique as arrayUnique,
+  intersection as arrayIntersection,
+  difference as arrayDifference,
+  contains as arrayContains,
+  symmetricDifference as arraySymmetricDifference,
+  find as arrayFind,
+  merge as arrayMerge,
 };
 
 // -------------------------------------------------------------------------- //
 
 export default {
-	unique,
-	intersection,
-	difference,
-	contains,
-	symmetricDifference,
-	find,
-	merge,
+  unique,
+  intersection,
+  difference,
+  contains,
+  symmetricDifference,
+  find,
+  merge,
 };
