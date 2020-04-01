@@ -31,54 +31,63 @@ const IndexPage = () => {
 			<div>
 				<ul>
 					<li>
+						<a href="https://sourcerer.io/erkobridee" target="_blank" rel="noopener noreferrer">
+							<img src="https://sourcerer.io/icons/logo-sharing.svg" height="16px" alt="Sourcerer" /> sourcerer.io
+						</a>
+					</li>
+					<li>
 						<FontIcon name="github" />{' '}
-						<a href="https://github.com/erkobridee" target="_blank">
+						<a href="https://github.com/erkobridee" target="_blank" rel="noopener noreferrer">
 							GitHub
 						</a>{' '}
 						|{' '}
-						<a href="https://gist.github.com/erkobridee" target="_blank">
+						<a href="https://gist.github.com/erkobridee" target="_blank" rel="noopener noreferrer">
 							Gist
 						</a>
 					</li>
 					<li>
-						<FontIcon name="web-programming" />{' '}
-						<a href="https://codesandbox.io/u/erkobridee/" target="_blank">
+						<FontIcon name="codesandbox" />{' '}
+						<a href="https://codesandbox.io/u/erkobridee/" target="_blank" rel="noopener noreferrer">
 							Code Sandbox
 						</a>
 					</li>
 					<li>
 						<FontIcon name="codepen" />{' '}
-						<a href="https://codepen.io/erkobridee" target="_blank">
+						<a href="https://codepen.io/erkobridee" target="_blank" rel="noopener noreferrer">
 							Codepen
 						</a>
 					</li>
 					<li>
 						<FontIcon name="linkedin" />{' '}
-						<a href="https://linkedin.com/in/erkobridee/" target="_blank">
+						<a href="https://linkedin.com/in/erkobridee/" target="_blank" rel="noopener noreferrer">
 							LinkedIn
 						</a>
 					</li>
 					<li>
 						<FontIcon name="udemy" />{' '}
-						<a href="https://www.udemy.com/user/erko-bridee-de-almeida-cabrera/" target="_blank">
+						<a
+							href="https://www.udemy.com/user/erko-bridee-de-almeida-cabrera/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Udemy
 						</a>
 					</li>
 					<li>
 						<FontIcon name="twitter" />{' '}
-						<a href="https://twitter.com/ErkoBridee" target="_blank">
+						<a href="https://twitter.com/ErkoBridee" target="_blank" rel="noopener noreferrer">
 							Twitter
 						</a>
 					</li>
 					<li>
 						<FontIcon name="instagram" />{' '}
-						<a href="https://www.instagram.com/erkobridee/" target="_blank">
+						<a href="https://www.instagram.com/erkobridee/" target="_blank" rel="noopener noreferrer">
 							Instagram
 						</a>
 					</li>
 					<li>
 						<FontIcon name="medium" />{' '}
-						<a href="https://medium.com/@erkobridee" target="_blank">
+						<a href="https://medium.com/@erkobridee" target="_blank" rel="noopener noreferrer">
 							Medium
 						</a>
 					</li>
