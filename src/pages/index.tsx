@@ -58,6 +58,12 @@ const IndexPage = () => {
 						</a>
 					</li>
 					<li>
+						<FontIcon name="repl" />{' '}
+						<a href="https://repl.it/@erkobridee" target="_blank" rel="noopener noreferrer">
+							Repl.it
+						</a>
+					</li>
+					<li>
 						<FontIcon name="linkedin" />{' '}
 						<a href="https://linkedin.com/in/erkobridee/" target="_blank" rel="noopener noreferrer">
 							LinkedIn
