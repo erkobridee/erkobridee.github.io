@@ -7,6 +7,15 @@ const gatsbyConfig = {
 		author: `@erkobridee`,
 	},
 	plugins: [
+		// it must be the first one on the array
+		{
+			resolve: `gatsby-plugin-google-analytics`,
+			options: {
+				trackingId: 'UA-1486171-2',
+				// this option places the tracking script into the head of the DOM
+				head: false,
+			},
+		},
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-source-filesystem`,

@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 import { FormattedMessage } from 'react-intl';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 
 import Layout from 'components/Layout';
 // import GatsbyAstronoutImage from 'components/GatsbyAstronoutImage';
@@ -31,71 +32,71 @@ const IndexPage = () => {
 			<div>
 				<ul>
 					<li>
-						<a href="https://sourcerer.io/erkobridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://sourcerer.io/erkobridee" target="_blank" rel="noopener noreferrer">
 							<img src="https://sourcerer.io/icons/logo-sharing.svg" height="16px" alt="Sourcerer" /> sourcerer.io
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="github" />{' '}
-						<a href="https://github.com/erkobridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://github.com/erkobridee" target="_blank" rel="noopener noreferrer">
 							GitHub
-						</a>{' '}
+						</OutboundLink>{' '}
 						|{' '}
-						<a href="https://gist.github.com/erkobridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://gist.github.com/erkobridee" target="_blank" rel="noopener noreferrer">
 							Gist
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="codesandbox" />{' '}
-						<a href="https://codesandbox.io/u/erkobridee/" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://codesandbox.io/u/erkobridee/" target="_blank" rel="noopener noreferrer">
 							Code Sandbox
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="codepen" />{' '}
-						<a href="https://codepen.io/erkobridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://codepen.io/erkobridee" target="_blank" rel="noopener noreferrer">
 							Codepen
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="repl" />{' '}
-						<a href="https://repl.it/@erkobridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://repl.it/@erkobridee" target="_blank" rel="noopener noreferrer">
 							Repl.it
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="linkedin" />{' '}
-						<a href="https://linkedin.com/in/erkobridee/" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://linkedin.com/in/erkobridee/" target="_blank" rel="noopener noreferrer">
 							LinkedIn
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="udemy" />{' '}
-						<a
+						<OutboundLink
 							href="https://www.udemy.com/user/erko-bridee-de-almeida-cabrera/"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
 							Udemy
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="twitter" />{' '}
-						<a href="https://twitter.com/ErkoBridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://twitter.com/ErkoBridee" target="_blank" rel="noopener noreferrer">
 							Twitter
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="instagram" />{' '}
-						<a href="https://www.instagram.com/erkobridee/" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://www.instagram.com/erkobridee/" target="_blank" rel="noopener noreferrer">
 							Instagram
-						</a>
+						</OutboundLink>
 					</li>
 					<li>
 						<FontIcon name="medium" />{' '}
-						<a href="https://medium.com/@erkobridee" target="_blank" rel="noopener noreferrer">
+						<OutboundLink href="https://medium.com/@erkobridee" target="_blank" rel="noopener noreferrer">
 							Medium
-						</a>
+						</OutboundLink>
 					</li>
 				</ul>
 			</div>
