@@ -1,11 +1,5 @@
-import { TArrayFilter, TJSValue } from 'helpers/definitions';
+import { TArrayFilter, TJSObject } from 'helpers/definitions';
 import { isObject } from 'helpers/check';
-
-/*
-function prop<T extends TJSValue>(object: T, key: string) {
-	return object[key];
-}
-*/
 
 /**
  * array filter function to get the intersection
@@ -15,9 +9,9 @@ function prop<T extends TJSValue>(object: T, key: string) {
  *
  * @return {TFilter<T>}
  */
-function filterIntersection<T extends TJSValue>(values: T[], byObjectProperty?: string): TArrayFilter<T> {
+function filterIntersection<T extends TJSObject>(values: T[], byObjectProperty?: string): TArrayFilter<T> {
 	if (byObjectProperty) {
-		return (x: T) => values.some(y => x[byObjectProperty] === y[byObjectProperty]);
+		return (x: T) => values.some(y => x[byObjectProperty] === (y as any)[byObjectProperty]);
 	}
 	return (x: T) => values.includes(x);
 }
@@ -30,7 +24,7 @@ function filterIntersection<T extends TJSValue>(values: T[], byObjectProperty?: 
  *
  * @return {TArrayFilter<T>}
  */
-function filterDifference<T extends TJSValue>(values: T[], byObjectProperty?: string): TArrayFilter<T> {
+function filterDifference<T extends TJSObject>(values: T[], byObjectProperty?: string): TArrayFilter<T> {
 	if (byObjectProperty) {
 		return (x: T) => !values.some(y => x[byObjectProperty] === y[byObjectProperty]);
 	}
@@ -47,7 +41,7 @@ function filterDifference<T extends TJSValue>(values: T[], byObjectProperty?: st
  *
  * @return {TArrayFilter<T>}
  */
-function filterFindValue<T extends TJSValue>(value: T, byObjectProperty?: string): TArrayFilter<T> {
+function filterFindValue<T extends TJSObject>(value: T, byObjectProperty?: string): TArrayFilter<T> {
 	if (byObjectProperty) {
 		return (x: T) => x[byObjectProperty] === (isObject(value) ? value[byObjectProperty] : value);
 	}
@@ -135,7 +129,7 @@ function symmetricDifference<T>(arr1: T[], arr2: T[], byObjectProperty?: string)
  *
  * @return {T | undefined} value founded or undefined
  */
-function find<T extends TJSValue>(values: T[], value: T, byObjectProperty?: string): T | undefined {
+function find<T extends TJSObject>(values: T[], value: T, byObjectProperty?: string): T | undefined {
 	return values.find(filterFindValue(value, byObjectProperty));
 }
 
