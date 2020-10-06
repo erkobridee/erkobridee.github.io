@@ -42,7 +42,6 @@ const LanguageSelector: React.FunctionComponent<ILanguageSelectorProps> = ({
 							</option>
 						);
 					})}
-					}
 				</select>
 			</div>
 		</div>
