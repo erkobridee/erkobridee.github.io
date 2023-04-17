@@ -7,7 +7,7 @@
 	"dependencies": {
 		"classnames": "^2.2.6",
 		"css-vars-ponyfill": "^2.2.1",
-		"qs": "^6.9.1",
+		"qs": "^6.9.7",
 		"react": "^16.13.1",
 		"react-dom": "^16.13.1",
 		"react-helmet": "^5.2.1",
