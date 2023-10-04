@@ -25,3 +25,6 @@
 -   [Completion certificate for Azure Introduction to Cloud Services](https://www.udemy.com/certificate/UC-128b416c-25c0-4cff-a0d7-2a948f540099/) - 2020/02/24
 
 -   [Completion certificate for Learn Azure DevOps CI/CD pipelines](https://www.udemy.com/certificate/UC-006d961f-7f15-4f55-9f46-6cac2f1c4bdc/) - 2020/02/25
+
+-   [Completion certificate for Introduction to the GDPR In One Hour - The Basic Facts](https://www.udemy.com/certificate/UC-93810596-242a-4a9a-a485-2aafa9162fb3/) - 2023/10/03
+
