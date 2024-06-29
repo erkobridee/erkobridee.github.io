@@ -1,0 +1,34 @@
+---
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+import cn from '#utils/cn';
+
+// https://docs.astro.build/en/guides/typescript/#component-props
+interface Props {
+  id?: string;
+  class?: string;
+}
+
+const { id, class: className } = Astro.props;
+
+// Styled by Tailwind :)
+---
+
+<button
+  id={id}
+  class={cn(
+    `
+    appearance-none
+    rounded-lg bg-purple-500
+    px-4 py-2
+    font-semibold
+    text-white shadow-md
+    hover:bg-purple-700
+    focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-opacity-75
+  `,
+    className
+  )}
+>
+  <slot />
+</button>

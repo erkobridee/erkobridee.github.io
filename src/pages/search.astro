@@ -1,0 +1,41 @@
+---
+import Layout from '#layouts/main.astro';
+
+// Component Imports
+import Link from '#components/Link.astro';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+// How to get the querystring parameters with Astro | StackOverflow
+// https://stackoverflow.com/a/70556653
+---
+
+<Layout
+  content={{
+    title: 'Search | Erko Bridee'
+  }}
+>
+  <div class="grid h-screen place-items-center content-center space-y-4">
+    <p>This page shows how to read the URL search parameters</p>
+
+    <div class="flex flex-col items-center space-y-4">
+      <div class="font-bold">URLSearchParams:</div>
+      <div id="search-params" class="font-mono text-sm">N/A</div>
+    </div>
+
+    <Link href="/">Go home</Link>
+  </div>
+</Layout>
+
+<script>
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+
+  console.log('URLSearchParams', params);
+
+  const searchParams = document.querySelector('div#search-params');
+  if (searchParams) {
+    searchParams.innerHTML = JSON.stringify(params, null, 2);
+  }
+</script>

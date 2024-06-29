@@ -1,0 +1,79 @@
+---
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+// https://docs.astro.build/en/guides/typescript/#built-in-html-attributes
+import type { HTMLAttributes } from 'astro/types';
+
+import cn from '#utils/cn';
+import redefineUrl from '#utils/redefineUrl';
+
+// TODO: check the following astro component 'astro-link'
+// https://github.com/JulianCataldo/web-garden/tree/develop/components/Link
+
+// https://docs.astro.build/en/guides/typescript/#component-props
+interface Props {
+  href: string;
+  external?: boolean;
+}
+
+const { href, external = href.startsWith('http') } = Astro.props;
+
+// https://docs.astro.build/en/reference/configuration-reference/#base
+
+let extraLinkProps: HTMLAttributes<'a'> = {
+  href,
+  rel: 'noopener nofollow',
+  target: '_blank'
+};
+
+if (!external) {
+  extraLinkProps = {
+    href: redefineUrl(href),
+    rel: 'prefetch'
+  };
+}
+
+// Styled by Tailwind :)
+---
+
+<style>
+  .external-link {
+    --icon-margin: 2px;
+    --icon-size: 16px;
+
+    display: flex;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: '';
+
+      margin-top: var(--icon-margin);
+      margin-left: var(--icon-margin);
+
+      width: var(--icon-size);
+      height: var(--icon-size);
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(transparent, transparent),
+        var(--externalIconUrl);
+    }
+  }
+</style>
+
+<a
+  {...extraLinkProps}
+  class={cn(
+    `
+    p-4 underline
+    transition-colors
+    duration-200 ease-in-out
+    hover:text-purple-500
+  `,
+    { 'external-link': external }
+  )}
+>
+  <slot />
+</a>
