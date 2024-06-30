@@ -1,0 +1,21 @@
+---
+import Layout from '#layouts/main.astro';
+
+// Component Imports
+import ProfileCard from '#components/ProfileCard.astro';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+// <div class="w-full border-b border-gray-300"></div>
+---
+
+<Layout
+  content={{
+    title: 'Erko Bridee'
+  }}
+>
+  <div class="grid h-screen place-items-center content-center space-y-4">
+    <ProfileCard />
+  </div>
+</Layout>

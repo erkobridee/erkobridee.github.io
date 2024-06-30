@@ -1,0 +1,35 @@
+---
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+import { Picture } from 'astro:assets';
+
+import AvatarImage from '#assets/images/erko_avatar_512.png';
+
+// Avatars | TW Elements
+// https://tw-elements.com/docs/standard/components/avatar/
+
+// Tailwind CSS Avatar | Preline.co
+// https://preline.co/docs/avatar.html
+
+// width={100}
+---
+
+<Picture
+  alt="Avatar"
+  id="avatar-erkobridee-manga"
+  class="h-full w-full rounded-full object-cover shadow-md"
+  src={AvatarImage}
+/>
+
+<script>
+  import confetti from 'canvas-confetti';
+
+  const avatar = document.querySelector('#avatar-erkobridee-manga');
+
+  if (avatar) {
+    avatar.addEventListener('click', () => {
+      confetti();
+    });
+  }
+</script>
