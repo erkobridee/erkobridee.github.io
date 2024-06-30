@@ -9,6 +9,8 @@
 
 [Astro Build](https://astro.build/) using [TypeScript](https://www.typescriptlang.org/) plus [TailwindCSS](https://tailwindcss.com/)
 
+- Project template: [[GitHub] erkobridee/astro-ts-tw-hello](https://github.com/erkobridee/astro-ts-tw-hello)
+
 ## Local Development
 
 - [VS Code](https://code.visualstudio.com/) + [Development Containers](https://containers.dev/) ( [Customizations](https://containers.dev/supporting#visual-studio-code) | [VS Code Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) )
