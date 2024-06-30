@@ -1,0 +1,42 @@
+---
+// social icons svg are from the feathericons
+// https://feathericons.com/
+// https://github.com/feathericons/feather
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+
+// https://docs.astro.build/en/guides/typescript/#component-props
+
+import { Icon } from 'astro-icon/components';
+
+const SocialPlatform = {
+  LinkedIn: 'linkedin',
+  GitHub: 'github',
+  Twitter: 'twitter',
+  Instagram: 'instagram'
+} as const;
+
+type TSocialPlatformKeys = keyof typeof SocialPlatform;
+type TSocialPlaftform = (typeof SocialPlatform)[TSocialPlatformKeys];
+
+interface Props {
+  platform: TSocialPlaftform;
+  username: string;
+}
+
+const { platform, username } = Astro.props;
+
+const link = {
+  linkedin: (username: string) => `https://www.linkedin.com/in/${username}`,
+  github: (username: string) => `https://github.com/${username}`,
+  twitter: (username: string) => `https://twitter.com/${username}`,
+  instagram: (username: string) => `https://www.instagram.com/${username}`
+}[platform](username);
+---
+
+<a href={link} target="_blank" rel="noopener nofollow">
+  <div aria-label={platform}>
+    <Icon name={`feather/${platform}`} size={24} class="stroke-[1.5]" />
+  </div>
+</a>

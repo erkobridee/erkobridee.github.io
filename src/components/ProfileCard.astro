@@ -1,11 +1,7 @@
 ---
-import { Icon } from 'astro-icon/components';
-
 import AvatarErkoBrideeManga from '#components/AvatarErkoBrideeManga.astro';
 
-// social icons svg are from the feathericons
-// https://feathericons.com/
-// https://github.com/feathericons/feather
+import SocialLink from '#components/SocialLink.astro';
 ---
 
 <div class="px-10 pt-10">
@@ -34,45 +30,10 @@ import AvatarErkoBrideeManga from '#components/AvatarErkoBrideeManga.astro';
         <div
           class="flex w-full justify-center space-x-9 pb-5 pt-5 text-[#718096]"
         >
-          <a
-            href="https://www.linkedin.com/in/erkobridee"
-            target="_blank"
-            rel="noopener nofollow"
-          >
-            <div aria-label="LinkedIn">
-              <Icon name="feather/linkedin" size={24} class="stroke-[1.5]" />
-            </div>
-          </a>
-
-          <a
-            href="https://github.com/erkobridee"
-            target="_blank"
-            rel="noopener nofollow"
-          >
-            <div aria-label="Github">
-              <Icon name="feather/github" size={24} class="stroke-[1.5]" />
-            </div>
-          </a>
-
-          <a
-            href="https://twitter.com/erkobridee"
-            target="_blank"
-            rel="noopener nofollow"
-          >
-            <div aria-label="Twitter">
-              <Icon name="feather/twitter" size={24} class="stroke-[1.5]" />
-            </div>
-          </a>
-
-          <a
-            href="https://www.instagram.com/erkobridee"
-            target="_blank"
-            rel="noopener nofollow"
-          >
-            <div aria-label="Instagram">
-              <Icon name="feather/instagram" size={24} class="stroke-[1.5]" />
-            </div>
-          </a>
+          <SocialLink platform="linkedin" username="erkobridee" />
+          <SocialLink platform="github" username="erkobridee" />
+          <SocialLink platform="twitter" username="erkobridee" />
+          <SocialLink platform="instagram" username="erkobridee" />
         </div>
       </div>
     </div>
