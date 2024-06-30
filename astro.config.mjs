@@ -1,6 +1,11 @@
 import mdx from '@astrojs/mdx';
 import tailwind from '@astrojs/tailwind';
+
+// https://github.com/ACP-CODE/astro-favicons
 import favicons from 'astro-favicons';
+
+// https://github.com/natemoo-re/astro-icon
+import icon from "astro-icon";
 
 import { defineConfig } from 'astro/config';
 
@@ -10,6 +15,9 @@ let integrations = [
     // Example: Allow writing nested CSS declarations
     // alongside Tailwind's syntax
     nesting: true
+  }),
+  icon({
+    iconDir: "src/assets/icons",
   })
 ];
 
