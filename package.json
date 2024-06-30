@@ -17,8 +17,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "canvas-confetti": "1.9.3",
     "@astrojs/check": "0.7.0",
+    "canvas-confetti": "1.9.3",
     "typescript": "5.5.2"
   },
   "devDependencies": {
@@ -29,6 +29,7 @@
     "@typescript-eslint/eslint-plugin": "7.14.1",
     "@typescript-eslint/parser": "7.14.1",
     "astro": "4.11.3",
+    "astro-favicons": "2.0.2",
     "autoprefixer": "10.4.19",
     "clsx": "2.1.1",
     "eslint": "8.57.0",

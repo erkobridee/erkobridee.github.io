@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Me" src="public/images/erko_avatar_512.png" width="80" />
+  <img alt="Me" src="src/assets/images/erko_avatar_512.png" width="80" />
 </p>
 <h1 align="center">
   Personal web site

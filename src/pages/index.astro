@@ -2,11 +2,12 @@
 import Layout from '#layouts/main.astro';
 
 // Component Imports
-import ConfettiButton from '#components/ConfettiButton.astro';
-import Link from '#components/Link.astro';
+import ProfileCard from '#components/ProfileCard.astro';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
+
+// <div class="w-full border-b border-gray-300"></div>
 ---
 
 <Layout
@@ -15,20 +16,6 @@ import Link from '#components/Link.astro';
   }}
 >
   <div class="grid h-screen place-items-center content-center space-y-4">
-    <ConfettiButton>Tailwind Button in Astro!</ConfettiButton>
-
-    <div class="w-full border-b border-gray-300"></div>
-
-    <div class="flex flex-col items-center space-y-4">
-      <div class="font-bold">Available Pages:</div>
-      <div>
-        <Link href="/markdown-page">Markdown is also supported...</Link> |
-        <Link href="/search?q=Hello World">Search 'Hello World'</Link>
-      </div>
-    </div>
-
-    <div class="w-full border-b border-gray-300"></div>
-
-    <Link href="https://github.com/erkobridee">GitHub - Erko Bridee</Link>
+    <ProfileCard />
   </div>
 </Layout>
