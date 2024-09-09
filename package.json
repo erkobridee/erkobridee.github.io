@@ -26,7 +26,7 @@
     "@types/canvas-confetti": "1.6.4",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "astro": "4.15.3",
+    "astro": "4.15.4",
     "astro-favicons": "2.0.2",
     "astro-icon": "1.1.1",
     "autoprefixer": "10.4.20",
