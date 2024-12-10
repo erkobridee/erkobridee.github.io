@@ -27,7 +27,7 @@
     "@typescript-eslint/eslint-plugin": "8.17.0",
     "@typescript-eslint/parser": "8.17.0",
     "astro": "5.0.2",
-    "astro-favicons": "2.1.8",
+    "astro-favicons": "3.0.6",
     "astro-icon": "1.1.4",
     "autoprefixer": "10.4.20",
     "clsx": "2.1.1",
