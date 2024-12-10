@@ -1,18 +1,15 @@
 {
   "name": null,
   "short_name": null,
-  "description": null,
-  "dir": "auto",
-  "lang": "en-GB",
+  "start_url": "/?homescreen=1",
+  "orientation": "any",
   "display": "standalone",
   "display_override": [
     "window-controls-overlay",
-    "standalone"
+    "minimal-ui"
   ],
-  "orientation": "any",
-  "start_url": "/?homescreen=1",
-  "background_color": "#fff",
   "theme_color": "#fff",
+  "background_color": "#fff",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
