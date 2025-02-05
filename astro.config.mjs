@@ -1,23 +1,22 @@
+// https://docs.astro.build/en/reference/configuration-reference/
+
 import mdx from '@astrojs/mdx';
-import tailwind from '@astrojs/tailwind';
+
+// https://tailwindcss.com/docs/installation/framework-guides/astro
+import tailwindcss from '@tailwindcss/vite';
 
 // https://github.com/ACP-CODE/astro-favicons
 import favicons from 'astro-favicons';
 
 // https://github.com/natemoo-re/astro-icon
-import icon from "astro-icon";
+import icon from 'astro-icon';
 
 import { defineConfig } from 'astro/config';
 
-let integrations = [
+const integrations = [
   mdx(),
-  tailwind({
-    // Example: Allow writing nested CSS declarations
-    // alongside Tailwind's syntax
-    nesting: true
-  }),
   icon({
-    iconDir: "src/assets/icons",
+    iconDir: 'src/assets/icons'
   })
 ];
 
@@ -32,7 +31,13 @@ if (import.meta.env.PROD) {
   );
 }
 
+/** @type {import('astro/config').config} */
+const config = {
+  integrations,
+  vite: {
+    plugins: [tailwindcss()]
+  }
+};
+
 // https://astro.build/config
-export default defineConfig({
-  integrations
-});
+export default defineConfig(config);

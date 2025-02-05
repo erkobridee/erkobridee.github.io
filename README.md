@@ -43,7 +43,9 @@ Following a Unix OS approach, that beens said so we have the following alias map
 
     - [Create gh-pages branch in existing repo | jf](https://jiafulow.github.io/blog/2020/07/09/create-gh-pages-branch-in-existing-repo/)
 
-  - [@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
+  - [Deprecated] [@astrojs/tailwind](https://docs.astro.build/en/guides/integrations-guide/tailwind/)
+
+    - [Tailwind 4 support](https://astro.build/blog/astro-520/#tailwind-4-support) >>> [Astro TailwindCSS Integration](https://docs.astro.build/en/guides/styling/#tailwind) >>> [Install Tailwind CSS v4 with Astro](https://tailwindcss.com/docs/installation/framework-guides/astro)
 
 ### Editor Setup
 
