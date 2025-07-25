@@ -11,10 +11,10 @@
     "eslint": "eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
     "lint": "run-s prettier eslint",
     "sync": "astro sync",
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host",
+    "start": "astro dev --host",
     "build": "astro check && astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --host",
     "astro": "astro"
   },
   "dependencies": {
