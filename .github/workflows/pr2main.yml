@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
-      - main
+      - source
 
 concurrency:
   group: pr-to-main-${{ github.head_ref || github.run_id }}
