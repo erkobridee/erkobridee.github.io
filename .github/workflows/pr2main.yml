@@ -1,4 +1,4 @@
-name: Pull Request to Main
+name: Pull Request to Source
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
       - source
 
 concurrency:
-  group: pr-to-main-${{ github.head_ref || github.run_id }}
+  group: pr-to-source-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
 
 permissions:
