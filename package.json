@@ -21,7 +21,7 @@
     "canvas-confetti": "1.9.4"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.7",
+    "@astrojs/check": "0.9.8",
     "@astrojs/mdx": "4.3.14",
     "@astrojs/ts-plugin": "1.10.7",
     "@tailwindcss/vite": "4.2.1",
