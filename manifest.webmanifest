@@ -1,6 +1,6 @@
 {
-  "name": null,
-  "short_name": null,
+  "name": "Erko Bridee landing page",
+  "short_name": "Erko Bridee lp",
   "start_url": "/?homescreen=1",
   "orientation": "any",
   "display": "standalone",
