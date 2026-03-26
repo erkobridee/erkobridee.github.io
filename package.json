@@ -54,5 +54,8 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
+  },
+  "overrides": {
+    "vite": "7.3.1"
   }
 }
