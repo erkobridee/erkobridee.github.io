@@ -44,7 +44,7 @@
     "prettier-plugin-astro": "0.14.1",
     "prettier-plugin-tailwindcss": "0.8.0",
     "simple-git-hooks": "2.13.1",
-    "tailwind-merge": "3.5.0",
+    "tailwind-merge": "3.6.0",
     "tailwindcss": "4.2.4",
     "typescript": "5.9.3"
   },
