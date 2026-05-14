@@ -18,12 +18,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "6.3.2",
+    "astro": "6.3.3",
     "canvas-confetti": "1.9.4"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.9",
-    "@astrojs/mdx": "5.0.5",
+    "@astrojs/mdx": "5.0.6",
     "@astrojs/ts-plugin": "1.10.8",
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.3.0",
