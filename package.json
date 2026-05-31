@@ -37,7 +37,7 @@
     "eslint": "10.4.0",
     "eslint-plugin-astro": "1.7.0",
     "is-ci": "4.1.0",
-    "lint-staged": "17.0.5",
+    "lint-staged": "17.0.7",
     "npm-run-all2": "9.0.1",
     "postcss": "8.5.15",
     "prettier": "3.8.3",
