@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
-    "@astrojs/mdx": "6.0.3",
+    "@astrojs/mdx": "8.0.1",
     "@astrojs/ts-plugin": "1.10.11",
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.3.3",
