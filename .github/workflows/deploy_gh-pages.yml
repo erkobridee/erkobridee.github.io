@@ -30,16 +30,18 @@ jobs:
       - name: Checkout your repository using git
         uses: actions/checkout@v7
 
-      - name: Setup Node 22.x
-        uses: actions/setup-node@v7
+      # https://github.com/pnpm/action-setup
+      - uses: pnpm/setup@v1
         with:
-          node-version: 24.x
+          version: 12
+          runtime: node@24
+          cache: true
 
-      - name: Install
-        run: npm i
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Build
-        run: npm run build
+        run: pnpm build
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
