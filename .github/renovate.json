@@ -4,10 +4,10 @@
   "packageRules": [
     {
       "matchDatasources": ["npm"],
-      "minimumReleaseAge": "3 days"
+      "minimumReleaseAge": "1 days"
     },
     {
-      "matchPackageNames": ["vite", "typescript"],
+      "matchPackageNames": ["typescript"],
       "enabled": false
     }
   ]
