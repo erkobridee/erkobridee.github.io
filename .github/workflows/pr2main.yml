@@ -26,7 +26,7 @@ jobs:
         with:
           version: 12
           runtime: node@24
-          cache: true
+          install: false
 
       - name: Install dependencies
         run: pnpm install

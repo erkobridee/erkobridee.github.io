@@ -35,6 +35,7 @@ jobs:
         with:
           version: 12
           runtime: node@24
+          install: false
           cache: true
 
       - name: Install dependencies
