@@ -36,7 +36,7 @@
     "astro-icon": "1.2.0",
     "autoprefixer": "10.6.1",
     "clsx": "2.1.1",
-    "eslint": "10.10.0",
+    "eslint": "10.11.0",
     "eslint-plugin-astro": "3.2.1",
     "is-ci": "4.1.0",
     "lint-staged": "17.5.1",
