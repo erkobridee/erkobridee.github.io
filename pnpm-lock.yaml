@@ -43,8 +43,8 @@ importers:
         specifier: 8.70.1
         version: 8.70.1(eslint@10.11.0(jiti@2.7.0))(typescript@6.0.3)
       astro-favicons:
-        specifier: 3.1.6
-        version: 3.1.6(astro@7.3.5(@types/node@26.6.2)(jiti@2.7.0)(yaml@2.9.1))
+        specifier: 3.1.8
+        version: 3.1.8(astro@7.3.5(@types/node@26.6.2)(jiti@2.7.0)(yaml@2.9.1))
       astro-icon:
         specifier: 1.2.0
         version: 1.2.0
@@ -1396,8 +1396,8 @@ packages:
     resolution: {integrity: sha512-lS5qlx401Q1ZUhQ44XQnM4uT2qI6hA0H+vstrd841xGVxunFOs0ut3DWJGYHK1l7mxRxQdDi1j53pfE7/AyGlA==}
     engines: {node: ^22.22.3 || ^24.16.0 || >=26.3.0}
 
-  astro-favicons@3.1.6:
-    resolution: {integrity: sha512-9YfNWaBEFz1nCHy4P1l4wfPRvuLe4qHuHovIcqD5HYfZeW82wyVG1+CZUVGhcjwbRCVkGRJ3G+CKTyX9BcoI5w==}
+  astro-favicons@3.1.8:
+    resolution: {integrity: sha512-1d4ARIb7ZcHUoFAH7HabR9vnWOvU2wLJYb1mUBWXsH3ZeNSn0vrlC4iULWQu6Xkyi1AmwE7F6O3fAQ5B52IThA==}
     peerDependencies:
       astro: '>= 4.0.0'
 
@@ -4031,7 +4031,7 @@ snapshots:
       - '@emnapi/runtime'
       - supports-color
 
-  astro-favicons@3.1.6(astro@7.3.5(@types/node@26.6.2)(jiti@2.7.0)(yaml@2.9.1)):
+  astro-favicons@3.1.8(astro@7.3.5(@types/node@26.6.2)(jiti@2.7.0)(yaml@2.9.1)):
     dependencies:
       astro: 7.3.5(@types/node@26.6.2)(jiti@2.7.0)(yaml@2.9.1)
       favilib: 1.0.5
