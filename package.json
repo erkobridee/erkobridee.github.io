@@ -40,7 +40,7 @@
     "eslint-plugin-astro": "3.2.1",
     "is-ci": "4.1.0",
     "lint-staged": "17.6.0",
-    "npm-run-all2": "9.0.3",
+    "npm-run-all2": "9.0.4",
     "postcss": "8.5.31",
     "prettier": "3.9.10",
     "prettier-plugin-astro": "1.1.1",
