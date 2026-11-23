@@ -1,9 +1,7 @@
-// https://github.com/lukeed/clsx
-import { clsx, type ClassValue } from 'clsx';
+// https://github.com/shadcn-ui/cn
 
-// https://github.com/dcastil/tailwind-merge
-import { twMerge } from 'tailwind-merge';
+export { cn } from 'cn';
 
-export const cn = (...args: ClassValue[]) => twMerge(clsx(args));
+import { cn } from 'cn';
 
 export default cn;

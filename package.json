@@ -35,7 +35,7 @@
     "astro-favicons": "3.1.8",
     "astro-icon": "1.2.0",
     "autoprefixer": "10.7.0",
-    "clsx": "2.1.1",
+    "cn": "0.5.2",
     "eslint": "10.15.0",
     "eslint-plugin-astro": "3.2.1",
     "is-ci": "4.1.0",
@@ -47,7 +47,6 @@
     "prettier-plugin-tailwindcss": "0.8.1",
     "sharp": "0.35.5",
     "simple-git-hooks": "2.14.0",
-    "tailwind-merge": "3.7.1",
     "tailwindcss": "4.3.5",
     "typescript": "6.0.3"
   },
