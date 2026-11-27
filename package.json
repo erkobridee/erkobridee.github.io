@@ -29,7 +29,7 @@
     "@eslint/js": "10.0.1",
     "@tailwindcss/vite": "4.3.5",
     "@types/canvas-confetti": "1.9.0",
-    "@types/node": "26.6.10",
+    "@types/node": "26.6.11",
     "@typescript-eslint/eslint-plugin": "8.74.0",
     "@typescript-eslint/parser": "8.74.0",
     "astro-favicons": "3.1.8",
